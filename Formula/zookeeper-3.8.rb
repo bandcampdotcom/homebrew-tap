@@ -1,22 +1,12 @@
 class Zookeeper38 < Formula
   desc "Centralized server for distributed coordination of services"
   homepage "https://zookeeper.apache.org/"
-  url "https://www.apache.org/dyn/closer.lua?path=zookeeper/zookeeper-3.8.1/apache-zookeeper-3.8.1.tar.gz"
-  mirror "https://archive.apache.org/dist/zookeeper/zookeeper-3.8.1/apache-zookeeper-3.8.1.tar.gz"
-  sha256 "ccc16850c8ab2553583583234d11c813061b5ea5f3b8ff1d740cde6c1fd1e219"
+  url "https://www.apache.org/dyn/closer.lua?path=zookeeper/zookeeper-3.8.2/apache-zookeeper-3.8.2.tar.gz"
+  mirror "https://archive.apache.org/dist/zookeeper/zookeeper-3.8.2/apache-zookeeper-3.8.2.tar.gz"
+  sha512 "30d42364d158850700623e2b0f226335ce52a9707660c16c64ea9c163fe657c429b5f846d664bf7f381bc86abafb01cdc28d23d9f8e49b99a751e6598342a7af"
   license "Apache-2.0"
   revision 1
   head "https://gitbox.apache.org/repos/asf/zookeeper.git", branch: "master"
-
-  bottle do
-    sha256 cellar: :any,                 arm64_ventura:  "13af3e59399609cf833576fc085e670afa28f46ccb1022353f027762a550c294"
-    sha256 cellar: :any,                 arm64_monterey: "1940be28281f05a35153adbd60c0e6818428ce12de6d1019d6c16118161e2927"
-    sha256 cellar: :any,                 arm64_big_sur:  "f6b2814e65f0d08379c538bbdbb64b09cceed58b00830d95cfae1bfd79981878"
-    sha256 cellar: :any,                 ventura:        "701fa917b47c5719898be5dae98dd5285f47a114ffe48ccf393d7485fc0553f6"
-    sha256 cellar: :any,                 monterey:       "caa5872fe21c62778c634ac46410dbe8150d993589d54df1aad0b3291dc9fdca"
-    sha256 cellar: :any,                 big_sur:        "2d1e98e4826a270e89c4afc2c3e6f10f2ab87028786ce42bb7d1a69be1797d4b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "d6648d03143cb69e6d0199171c3010703f5b9e8e8b099bfa9ed3cfb8969ceecc"
-  end
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
@@ -29,8 +19,8 @@ class Zookeeper38 < Formula
   depends_on "openssl@3"
 
   resource "default_logback_xml" do
-    url "https://raw.githubusercontent.com/apache/zookeeper/release-3.8.1/conf/logback.xml"
-    sha256 "2fae7f51e4f92e8e3536e5f9ac193cb0f4237d194b982bb00b5c8644389c901f"
+    url "https://raw.githubusercontent.com/apache/zookeeper/release-3.8.2/conf/logback.xml"
+    sha512 "9ec86485b796b09ce1ffea13c51be10f959f342969f9cdf3215d27024e724d8c305237666464d9ef44d6fc4b045cd75576a9ecca70896447e3b94b360eceb7bc"
   end
 
   def default_zk_env
