@@ -3,7 +3,7 @@ class Zookeeper38 < Formula
   homepage "https://zookeeper.apache.org/"
   url "https://www.apache.org/dyn/closer.lua?path=zookeeper/zookeeper-3.8.2/apache-zookeeper-3.8.2.tar.gz"
   mirror "https://archive.apache.org/dist/zookeeper/zookeeper-3.8.2/apache-zookeeper-3.8.2.tar.gz"
-  sha512 "30d42364d158850700623e2b0f226335ce52a9707660c16c64ea9c163fe657c429b5f846d664bf7f381bc86abafb01cdc28d23d9f8e49b99a751e6598342a7af"
+  sha256 "86c3b6a7bc25d65ad6f40c2f5300b9334b15fa5329ab9815910d466dcdb3fd11"
   license "Apache-2.0"
   revision 1
   head "https://gitbox.apache.org/repos/asf/zookeeper.git", branch: "master"
@@ -20,7 +20,7 @@ class Zookeeper38 < Formula
 
   resource "default_logback_xml" do
     url "https://raw.githubusercontent.com/apache/zookeeper/release-3.8.2/conf/logback.xml"
-    sha512 "9ec86485b796b09ce1ffea13c51be10f959f342969f9cdf3215d27024e724d8c305237666464d9ef44d6fc4b045cd75576a9ecca70896447e3b94b360eceb7bc"
+    sha256 "2fae7f51e4f92e8e3536e5f9ac193cb0f4237d194b982bb00b5c8644389c901f"
   end
 
   def default_zk_env
