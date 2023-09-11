@@ -1,10 +1,12 @@
-# Bandcampdotcom Tap
+# Bandcamp Tap
 
 ## How do I install these formulae?
 
-`brew install bandcampdotcom/tap/<formula>`
+Or `brew tap bandcamp/homebrew-tap https://github.ol.epicgames.net/bandcamp/homebrew-tap.git` and then `brew install bandcamp/tap/<formula>`.
 
-Or `brew tap bandcampdotcom/tap` and then `brew install <formula>`.
+If you don't have an ssh key for Epic's GHE, you'll be prompted for your Epic GHE: first.lastname/Okta password. 
+
+Set up an SSH key for this repo, it's safer.
 
 ## Documentation
 
