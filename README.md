@@ -2,7 +2,7 @@
 
 ## How do I install these formulae?
 
-Or `brew tap bandcampdotcom/tap` and then `brew install bandcamp/tap/<formula>`.
+Or `brew tap bandcampdotcom/tap` and then `brew install bandcampdotcom/tap/<formula>`.
 
 ## Documentation
 
